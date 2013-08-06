@@ -1,0 +1,16 @@
+<configuration>
+   <system.runtime.remoting>
+      <application>
+         <service>
+            <wellknown 
+               mode="Singleton" 
+               type="FinamImport.SharedLoader, FinamImport" 
+               objectUri="Indices.rem"
+            />
+         </service>
+         <channels>
+            <channel ref="tcp" port="15100"/>
+         </channels>
+      </application>
+   </system.runtime.remoting>
+</configuration>
